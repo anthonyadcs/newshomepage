@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    
+    max-height: 100vh;
+}
+
+/* CONTAINER GERAL */
+.container{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 1.6rem;
+    
+    height: 100vh;
+}
+
+/* HEADER */
+.container header{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 2.5rem;
+    
+    width: 100%;
+}
+
+.container header img{
+    width: 13%;
+}
+
+
+/* MAIN INICIAL */
+.container main .main-text{
+    color: hsl(236, 13%, 42%);
+
+    margin: 2rem 0;
+}
+
+.container main .main-text img{
+    width: 100%;
+}
+
+.container main .main-text h1{
+    color: hsl(240, 100%, 5%);
+    
+    margin: 1rem 0;
+
+    font-size: 3.6rem;
+    font-weight: 800;
+}
+
+.container main .main-text p{
+    margin: 1.6rem 0;
+}
+
+.container main .main-text button{
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    border: none;
+    
+    width: 50%;
+    height: 3.6rem;
+    margin-bottom: 4rem;
+
+    text-transform: uppercase;
+
+    font-weight: 700;
+    letter-spacing: .2rem;
+}
+
+/* MAIN NEW */
+.container main .main-topics{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2rem 1rem;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(233, 8%, 79%);
+}
+
+.container main .main-topics h2{
+    color: hsl(35, 77%, 62%);
+}
+
+.container main .main-topics h3{
+    color: hsl(36, 100%, 99%);
+    margin-top: 2.4rem;
+}
+
+.container main .main-topics .topic{
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+}
+
+.container main .main-topics .topic p{
+    padding: 1rem 0px 3rem 0px;
+}
+
+.container main .main-topics .topic:last-child{
+    border: none;
+}
+
+.container main .main-topics .topic:last-child p{
+    padding-bottom: .5rem;
+}
+
+/* MAIN ARTICLES */
+.container main .main-articles .card{
+    color: hsl(236, 13%, 42%);
+    
+    display: flex;
+    margin: 4rem 0;
+}
+
+.container main .main-articles .card .text{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container main .main-articles .card img{
+    width: 30%;
+    margin-right: 2rem;
+}
+
+.container main .main-articles .card h2{
+    color: hsl(233, 8%, 79%);
+    margin-bottom: 1rem;
+}
+
+.container main .main-articles .card h3{
+    color: hsl(240, 100%, 5%);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+.hide{
+    display: none;
+}
