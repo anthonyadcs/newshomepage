@@ -8,151 +8,349 @@
     font-size: 62.5%;
 }
 
+html{
+    width: 100%;
+}
+
 body{
     font-size: 1.6rem;
     font-family: 'Inter', sans-serif;
     
-    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100%;
 }
 
-/* CONTAINER GERAL */
+/* CONTAINER GERAL E MENU MOBILE */
 .container{
+    
+    padding: 3rem;
+    height: 100%;
+    
     display: flex;
     flex-direction: column;
-    
-    padding: 1.6rem;
-    
-    height: 100vh;
 }
 
-/* HEADER */
+.menu-mobile{
+    background-color: white;
+    color: hsl(240, 100%, 5%);
+    
+    font-size: 2.4rem;
+    
+    display: none;
+    flex-direction: column;
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 60%;
+}
+
+.menu-mobile ul{
+    margin-top: 9rem;
+    margin-left: 3rem;
+
+    list-style: none;
+}
+
+.menu-mobile ul li{
+    margin-top: 3.4rem;
+}
+
+.menu-mobile ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu-mobile header {
+    display: flex;
+    justify-content: right;
+    
+    height: 4rem;
+    margin: 2rem 4rem 0 0;
+}
+
+/* ESTILIZAÇÃO DO HEADER DA PÁGINA */
 .container header{
     display: flex;
     justify-content: space-between;
     
-    margin-bottom: 2.5rem;
-    
     width: 100%;
+    
+    margin-bottom: 2.5rem;
 }
 
+.container header nav{
+    display: none;
+}
 .container header img{
-    width: 13%;
+    object-fit: contain;
 }
 
-
-/* MAIN INICIAL */
-.container main .main-text{
+/* ESTILIZAÇÃO DO CORPO PRINCIPAL DO SITE*/
+.container .main-text{
     color: hsl(236, 13%, 42%);
 
     margin: 2rem 0;
 }
 
-.container main .main-text img{
+.container .main-img img{
     width: 100%;
 }
 
-.container main .main-text h1{
+.container .main-text h1{
     color: hsl(240, 100%, 5%);
     
-    margin: 1rem 0;
-
     font-size: 3.6rem;
     font-weight: 800;
+    
+    margin: 1rem 0;
 }
 
-.container main .main-text p{
+.container .main-text p{
     margin: 1.6rem 0;
 }
 
-.container main .main-text button{
+.container .main-text button{
     background-color: hsl(5, 85%, 63%);
     color: hsl(36, 100%, 99%);
-    border: none;
+    
+    font-weight: 700;
+    letter-spacing: .2rem;
     
     width: 50%;
     height: 3.6rem;
     margin-bottom: 4rem;
-
+    
     text-transform: uppercase;
+    border: none;
 
-    font-weight: 700;
-    letter-spacing: .2rem;
+
+    cursor: pointer;
 }
 
-/* MAIN NEW */
-.container main .main-topics{
+
+/* ESTILIZAÇÃO DA BARRA DE TÓPICOS COM TITULO "NEW" */
+.container aside{
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(233, 8%, 79%);
+
     display: flex;
     flex-direction: column;
     align-items: start;
+
     padding: 2rem 1rem;
-    background-color: hsl(240, 100%, 5%);
-    color: hsl(233, 8%, 79%);
+    margin-bottom: 4rem;
 }
 
-.container main .main-topics h2{
+.container aside h2{
     color: hsl(35, 77%, 62%);
 }
 
-.container main .main-topics h3{
+.container aside h3{
     color: hsl(36, 100%, 99%);
+
     margin-top: 2.4rem;
 }
 
-.container main .main-topics .topic{
+.container aside .topic{
     border-bottom: 1px solid hsl(233, 8%, 79%);
+
+    width: 100%;
 }
 
-.container main .main-topics .topic p{
+.container aside .topic p{
     padding: 1rem 0px 3rem 0px;
 }
 
-.container main .main-topics .topic:last-child{
+.container aside .topic:last-child{
     border: none;
 }
 
-.container main .main-topics .topic:last-child p{
+.container aside .topic:last-child p{
     padding-bottom: .5rem;
 }
 
-/* MAIN ARTICLES */
-.container main .main-articles .card{
+/* SECTION */
+.container section .card{
     color: hsl(236, 13%, 42%);
     
     display: flex;
+
     margin: 4rem 0;
 }
 
-.container main .main-articles .card .text{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.container main .main-articles .card img{
+.container section .card img{
     width: 30%;
+
     margin-right: 2rem;
 }
 
-.container main .main-articles .card h2{
+.container section .card h2{
     color: hsl(233, 8%, 79%);
+
     margin-bottom: 1rem;
 }
 
-.container main .main-articles .card h3{
+.container section .card h3{
     color: hsl(240, 100%, 5%);
+
     font-size: 1.8rem;
+
     margin-bottom: 1rem;
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-    padding-bottom: 1rem;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
+.menu-mobile{
+    background-color: hsl(36, 100%, 99%);
+}
 
-.hide{
-    display: none;
+/*TABLET PORTRAIT AND TABLET LANDSCAPE*/
+@media (min-width:800px){
+    .container header .menu-icon{
+        display: none;
+
+        cursor: pointer;
+    }
+
+    .container header nav{
+        display: flex;
+        align-items: right;
+    }
+    
+    .container header nav ul{
+        color: hsl(236, 13%, 42%);
+
+        display: flex;
+        align-items: end;
+        gap: 4rem;
+
+        font-weight: 400;
+        list-style: none;
+    }
+    
+    .container header nav ul li a{
+        color: hsl(236, 13%, 42%);
+
+        text-decoration: none;
+    }
+    
+    .container header nav ul li a:visited{
+        color: hsl(236, 13%, 42%);
+    }
+
+    .container section{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+
+        width: 100%;
+
+        margin-bottom: 2rem;
+    }
+
+    .container section .card:not(.container .section .card img){
+        display: flex;
+        align-items: center;
+        
+        width: 100%;
+        height: 100%;
+
+        margin: 1rem;
+    }
+
+    .container section .card img{
+        align-self: center;
+        
+        margin-right: 1rem;
+
+        object-fit: contain;
+    }
+}
+
+@media(min-width:1024px){
+    .container{
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 10% 60% 30%;
+        grid-template-areas: 
+        "header header"
+        "main aside"
+        "section section";
+        gap: 3rem 3rem;
+    }
+
+    .container header{
+        grid-area: header;
+
+        max-width: 95vw;
+    }
+
+    .container main{
+        grid-area: main;
+
+        margin-top: 0;
+        margin-bottom: 10rem;
+    }
+
+    .container main .main-img .main-img-img{
+        max-width: 930px;
+        max-height: 400px;
+    }
+
+    .container main .main-text .text{
+        display: flex;
+    }
+
+    .container main .main-text .text .h1 h1{
+        width: 100%;
+
+        font-size: 6rem;
+    }
+
+    .container main .main-text .text .p{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 100%;
+
+        line-height: 3rem;
+        margin-left: 3rem;
+    }
+
+    .container main .main-text .text .p button{
+        width: 60%;
+        height: 5rem;
+
+        margin: 0;
+    }
+
+    .container main .main-text .text .p button:hover{
+        background-color: hsl(240, 100%, 5%);
+        transition: all ease .4s;
+    }
+
+    .container aside{
+        grid-area: aside;
+
+        width: 90%;
+        height: 100%;
+    }
+
+    .container aside .topic h3:hover{
+        color: hsl(35, 77%, 62%);
+        transition: all ease .3s;
+    }
+
+    .container section{
+        grid-area: section;
+    }
+
+    .container section .card .text{
+        font-size: 1.6rem;
+    }
 }

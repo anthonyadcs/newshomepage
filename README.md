@@ -19,6 +19,10 @@ Meu objetivo com este projeto é:
 
 Meu objetivo assumindo este projeto é para poder melhorar minhas habilidades em HTML e CSS, enquanto pratico a linguagem que tenho posto mais foco, Javascript.
 
+AO FIM DESTE PROJETO, EU:
+
+Desenvolvi minhas habilidades com manipulação de DOM, estilização com CSS, utilizando de grid layouts para o o layout desktop. Também pratiquei a linguagem de marcação HTML, fazendo com que tudo fique ao máximo semântico.
+
 # ENG
 
 A frontend challenge for the Frontend Mentor website designed to practice responsiveness and the ability to reproduce images in code.
@@ -35,3 +39,7 @@ Use Flexbox and CSS Grid when necessary;
 Have the Mobile-First method as a priority for developing responsiveness;
 Use the Javascript Vanilla language to develop page interactions.
 My aim in taking on this project is to improve my HTML and CSS skills, while practicing the language I've been focusing on most, Javascript.
+
+BY THE END OF THIS PROJECT, I:
+
+Developed my skills with DOM manipulation, styling with CSS, using grid layouts for the desktop layout. I also practised the HTML markup language, making everything as semantic as possible.
